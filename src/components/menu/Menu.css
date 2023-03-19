@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Source+Serif+Pro:wght@300&display=swap");
+
+.menu_container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  height: max-content;
+  background-image: linear-gradient(
+      to top,
+      rgba(133, 109, 190, 0.5) 0%,
+      rgba(212, 141, 192, 0.5) 100%
+    ),
+    url(https://media.istockphoto.com/photos/pan-fried-duck-picture-id1081422898?k=6&m=1081422898&s=612x612&w=0&h=an8cEitB_Ll6FKfgT6FKFHuxK7UCKUOyxrqPYEbcgIs=);
+}
+
+.menu_main {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.menu_main div {
+  margin: 0;
+}
+
+.logo_container {
+  width: 75%;
+}
+
+.menu_main .nav_bar_container {
+  width: 18%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #e6e4e4;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: none;
+}
+
+.menu_main .nav_bar_container:hover {
+  background-color: #b8b5b5;
+}
+
+.logo_container .logo {
+  font-family: "MonteCarlo", cursive;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 2px;
+  color: #fff;
+}
+
+.menu {
+  display: none;
+  transition: all 0.3s;
+  width: 100%;
+  /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+}
+
+.menu.expanded {
+  display: block;
+}
+.menu ul {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 8px 10px;
+  text-align: center;
+}
+
+.menu ul li a {
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Source Serif Pro", serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu ul li h2 {
+  color: #fff;
+  font-family: "MonteCarlo", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
