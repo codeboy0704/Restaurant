@@ -1,6 +1,7 @@
 import React from "react";
 import Couple from "../../assets/restaurant-table/icons8-restaurant-table-64.svg";
-
+import Platillo1 from "../../assets/food/platillo_1.jpg";
+import Platillo2 from "../../assets/food/platillo_2.jpg";
 function Presentation() {
   return (
     <div className="main_presentation_container">
@@ -26,6 +27,14 @@ function Presentation() {
       <div className="presentation_options">
         <button>Reservaciones</button>
         <button>Ver Menu</button>
+      </div>
+      <div className="presentation_images">
+        <picture>
+          <img src={Platillo1} alt="platillo 1" />
+        </picture>
+        <picture>
+          <img src={Platillo2} alt="platillo 2" />
+        </picture>
       </div>
     </div>
   );

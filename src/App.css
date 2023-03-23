@@ -41,6 +41,7 @@
 .presentation_options {
   width: 100%;
   text-align: center;
+  margin: 0.8rem 0;
 }
 
 .presentation_options button {
@@ -73,6 +74,35 @@
   font-size: 1.1rem;
   font-weight: 300;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 0.2rem 0;
   color: rgba(97, 73, 153, 0.9);
+}
+
+.presentation_images {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.presentation_images picture {
+  width: 45%;
+  height: 90%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.presentation_images picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.presentation_images picture:hover {
+  transform: scale(1.1);
+  margin: 0 0.3rem;
 }
