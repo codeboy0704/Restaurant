@@ -109,16 +109,38 @@
 
 /* Carrusel section */
 
+.carrousel_wrapper {
+  position: relative;
+}
+
 .swiper-slide {
   width: 100%;
   height: 100%;
 }
 
-.swiper-pagination-bullet {
+.arrow {
+  position: absolute;
+  z-index: 200;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.left_arrow {
+  top: 50%;
+  left: 5px;
+}
+
+.right_arrow {
+  top: 50%;
+  right: 5px;
+}
+
+/* .swiper-pagination-bullet {
   padding: 0.5rem;
   margin: 0.5rem;
   background-color: red;
-}
+} */
 
 .slide_element {
   display: flex;
@@ -129,10 +151,12 @@
   background-size: cover;
   background-position: center;
   color: #fff;
+  z-index: 100;
 }
 
 .slide_element_text {
   text-align: center;
+  width: 94%;
 }
 
 .slide_element_text h2 {
