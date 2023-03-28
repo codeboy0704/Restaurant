@@ -5,6 +5,7 @@ import Menu from "./components/menu/Menu";
 import Carrusel from "../src/components/carrusel/Swiper";
 import elements from "./components/carrusel/elements";
 import Platillos from "./components/platillos/Platillos";
+import ContactFooter from "./components/contact/ContactFooter";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Presentation />
       <Carrusel elements={elements} />
       <Platillos />
+      <ContactFooter />
     </div>
   );
 }

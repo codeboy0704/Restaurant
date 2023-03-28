@@ -21,7 +21,7 @@ export default function Swipper({ elements }) {
       </button>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
-        effect="fade"
+        effect="card"
         spaceBetween={5}
         slidesPerView={1}
         navigation={{ nextEl: "#swiper_forward", prevEl: "#swiper_back" }}

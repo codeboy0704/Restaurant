@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Source+Serif+Pro:wght@300&display=swap");
 
+:root {
+  --main-background-image: linear-gradient(
+      to bottom,
+      rgba(114, 91, 168, 0.5) 0%,
+      rgba(131, 73, 114, 0.5) 100%
+    ),
+    url(https://media.istockphoto.com/photos/pan-fried-duck-picture-id1081422898?k=6&m=1081422898&s=612x612&w=0&h=an8cEitB_Ll6FKfgT6FKFHuxK7UCKUOyxrqPYEbcgIs=);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -221,7 +230,7 @@
   flex-flow: column wrap;
   align-items: center;
   gap: 0.2rem;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   text-align: center;
   width: 100%;
   padding: 0.5rem 0;
@@ -237,7 +246,7 @@
 
 .platillos_description_logo {
   width: 90%;
-  height: 100px;
+  height: 80px;
   text-align: center;
   margin: 0.5rem 0;
 }
@@ -260,4 +269,61 @@
   padding: 0.2rem 0;
   margin-bottom: 1.5rem;
   color: rgba(97, 73, 153, 0.9);
+}
+
+/* Contact footer section  */
+.contact_footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(17, 3, 49, 0.5) 0%,
+      rgba(22, 0, 16, 0.5) 100%
+    ),
+    url(https://media.istockphoto.com/photos/pan-fried-duck-picture-id1081422898?k=6&m=1081422898&s=612x612&w=0&h=an8cEitB_Ll6FKfgT6FKFHuxK7UCKUOyxrqPYEbcgIs=);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 0.8rem 0;
+}
+
+.contact_footer .contact_footer_main {
+  text-align: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_footer_main h2 {
+  font-size: 18px;
+}
+
+.contact_footer_main button {
+  margin: 0.5rem 0;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(92, 69, 145, 0.5) 0%,
+    rgba(109, 54, 93, 0.5) 100%
+  );
+  color: #fff;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact_footer .info {
+  width: 100%;
+}
+
+.contact_footer .info h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.contact_footer .info h2 span {
+  color: rgba(112, 79, 189, 0.8);
 }

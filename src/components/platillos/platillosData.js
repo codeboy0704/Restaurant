@@ -13,32 +13,32 @@ const data = [
     image: Langostino,
   },
   {
-    id: Math.floor(Math.random),
+    id: Math.random(),
     name: "Salmón en Salsa Cítrica",
     price: "$19",
     image: Salmon,
   },
   {
-    id: Math.floor(Math.random),
+    id: Math.random(),
     name: "Pechuga de Pollo en Salsa de Mango",
     price: "$14",
     image: Pechuga,
   },
 
   {
-    id: Math.floor(Math.random),
+    id: Math.random(),
     name: "Filete de Corvina a la Macho",
     price: "$22",
     image: Filete,
   },
   {
-    id: Math.floor(Math.random),
+    id: Math.random(),
     name: "Langosta clásica en Mantequilla",
     price: "$20",
     image: Langosta,
   },
   {
-    id: Math.floor(Math.random),
+    id: Math.random(),
     name: "Chuleta de Cerdo a la Griega",
     price: "$16",
     image: Chuleta,
