@@ -43,11 +43,6 @@
   text-transform: capitalize;
 }
 
-.presentation_text h1 {
-  font-family: "MonteCarlo", cursive;
-  font-size: 2.9rem;
-}
-
 .presentation_options {
   width: 100%;
   text-align: center;
@@ -77,6 +72,15 @@
     rgba(92, 69, 145, 0.5) 0%,
     rgba(109, 54, 93, 0.5) 100%
   );
+}
+
+.restaurant_history_text {
+  text-align: center;
+}
+.restaurant_history_text h1 {
+  font-family: "MonteCarlo", cursive;
+  font-size: 2.9rem;
+  color: rgba(97, 73, 153, 0.9);
 }
 
 .restaurant_history_text p {
@@ -376,6 +380,31 @@
 }
 
 @media (min-width: 768px) {
+  /* Presentation section  */
+
+  .main_presentation_container {
+    align-items: normal;
+    flex-flow: row wrap;
+  }
+
+  .presentation_text {
+    width: 100%;
+  }
+
+  .restaurant_history_text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 50%;
+    order: 2;
+    height: 400px;
+  }
+
+  .presentation_images {
+    width: 50%;
+    height: 380px;
+  }
+
   /* Platillos section  */
 
   .platillos_section {

@@ -10,10 +10,10 @@ function Presentation() {
         <picture className="table_image_container">
           <img src={Couple} alt="table-couple" />
         </picture>
-        <h1>Los Bambinos</h1>
       </div>
 
       <div className="restaurant_history_text">
+        <h1>Los Bambinos</h1>
         <p>
           Bienvenidos a la experiencia Bambinos, donde nuestra mayor
           satisfacción es atenderle como un invitado especial y compartir con
@@ -23,10 +23,10 @@ function Presentation() {
           terraza y acogedores balcones regalan al visitante y comensal
           espectaculares vistas de la Ciudad de Panamá.
         </p>
-      </div>
-      <div className="presentation_options">
-        <button>Reservaciones</button>
-        <button>Ver Menu</button>
+        <div className="presentation_options">
+          <button>Reservaciones</button>
+          <button>Ver Menu</button>
+        </div>
       </div>
       <div className="presentation_images">
         <picture>
