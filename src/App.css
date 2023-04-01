@@ -186,19 +186,16 @@
 /* Platillos section  */
 
 .platillos_section {
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   width: 100%;
-  gap: 3rem;
+  gap: 2rem;
   background-color: #fff;
   margin-top: 0.5rem;
-  height: max-content;
 }
 
 .platillos_element {
   text-align: center;
-  height: 310px;
-  width: 100%;
   padding: 0.5rem;
   color: rgba(51, 36, 83, 0.9);
   font-family: "Source Serif Pro", serif;
@@ -364,4 +361,45 @@
 
 .location_container iframe {
   object-fit: cover;
+}
+
+@media (min-width: 550px) {
+  /* Platillos Section  */
+  .platillos_section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .platillos_description {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Platillos section  */
+
+  .platillos_section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .platillos_element {
+    grid-column: span 1;
+  }
+
+  .platillos_element picture {
+    height: 90px;
+  }
+
+  .platillos_element picture img {
+    width: 200px;
+  }
+
+  .platillos_element h2 {
+    font-size: 1.2rem;
+  }
+
+  .platillos_description {
+    grid-column: span 3;
+  }
 }
