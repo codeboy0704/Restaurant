@@ -6,16 +6,19 @@ import Carrusel from "../src/components/carrusel/Swiper";
 import elements from "./components/carrusel/elements";
 import Platillos from "./components/platillos/Platillos";
 import ContactFooter from "./components/contact/ContactFooter";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Menu />
-      <Presentation />
-      <Carrusel elements={elements} />
-      <Platillos />
-      <ContactFooter />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Menu />
+        <Presentation />
+        <Carrusel elements={elements} />
+        <Platillos />
+        <ContactFooter />
+      </div>
+    </BrowserRouter>
   );
 }
 

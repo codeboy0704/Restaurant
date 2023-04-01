@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BAR from "../../assets/menu_bars/30.png";
+import BAR from "../../assets/menu_bars/menu.svg";
 import "./Menu.css";
 function Menu() {
   const [menuState, setMenuState] = useState(false);
