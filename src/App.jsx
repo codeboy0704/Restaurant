@@ -6,19 +6,42 @@ import Carrusel from "../src/components/carrusel/Swiper";
 import elements from "./components/carrusel/elements";
 import Platillos from "./components/platillos/Platillos";
 import ContactFooter from "./components/contact/ContactFooter";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Router, createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/home/Home";
 
+const router = createBrowserRouter([
+
+  {
+   path: "/",
+   element: (
+    <>
+      <Menu />
+      <Home />
+      <ContactFooter />
+    </>
+   ),
+ },
+ {
+  path: "/gallery",
+  element: (
+    <>
+      <Menu />
+      Gallery
+      <ContactFooter />
+
+    </>
+  )
+
+ }
+ 
+]
+)
 function App() {
   return (
-    <BrowserRouter>
       <div className="App">
-        <Menu />
-        <Presentation />
-        <Carrusel elements={elements} />
-        <Platillos />
-        <ContactFooter />
+      <RouterProvider router={router} />
       </div>
-    </BrowserRouter>
+   
   );
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BAR from "../../assets/menu_bars/menu.svg";
 import "./Menu.css";
+import { Link } from "react-router-dom";
 function Menu() {
   const [menuState, setMenuState] = useState(false);
   return (
@@ -23,22 +24,22 @@ function Menu() {
       <nav className={menuState ? "menu expanded" : "menu"}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Gallery</a>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li>
-            <a href="#">Drinks</a>
+            <Link to="/drinks">Drinks</Link>
           </li>
           <li>
-            <a href="#">Menu</a>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <a href="#">Deserts</a>
+            <Link to="/dessert">Deserts</Link>
           </li>
           <li>
-            <a href="#">Contact US</a>
+            <Link to="/contact">Contact US</Link>
           </li>
         </ul>
       </nav>
