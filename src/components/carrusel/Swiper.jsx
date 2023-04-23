@@ -5,20 +5,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Slide from "./Slide";
 import RightArrow from "../../assets/arrows/right.svg";
 import LeftArrow from "../../assets/arrows/left.svg";
+import Arrow from "./Arrow";
 
 export default function Swipper({ elements }) {
-  const swiper = useSwiper();
   return (
     <div className="carrousel_wrapper">
-      <button id="swiper_back" className="left_arrow arrow">
-        <img src={LeftArrow} alt="left arrow" />
-      </button>
-      <button id="swiper_forward" className="right_arrow arrow">
-        <img src={RightArrow} alt="right arrow" />
-      </button>
+     <Arrow />
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
         effect="card"

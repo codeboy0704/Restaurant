@@ -8,6 +8,7 @@ import Platillos from "./components/platillos/Platillos";
 import ContactFooter from "./components/contact/ContactFooter";
 import { BrowserRouter, Route, Router, createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/home/Home";
+import Gallery from "./components/gallery/Gallery";
 
 const router = createBrowserRouter([
 
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
   element: (
     <>
       <Menu />
-      Gallery
+      <Gallery />
       <ContactFooter />
 
     </>
