@@ -15,16 +15,16 @@ function ContactFooter() {
 
       <Location />
       <div className="contact_icons">
-        <Link to="https://instagram.com" className="contact_icon">
+        <Link to="https://instagram.com" target="_blank" className="contact_icon">
           <img src={Instagram} alt="Instagram Logo" />
         </Link>
-        <Link to="https://facebook.com" className="contact_icon">
+        <Link to="https://facebook.com" target="_blank" className="contact_icon">
           <img src={Facebook} alt="Facebook Logo" />
         </Link>
-        <Link className="contact_icon">
+        <Link className="contact_icon" target="_blank">
           <img src={Mail} alt="Instagram Logo" />
         </Link>
-        <Link className="contact_icon">
+        <Link className="contact_icon" target="_blank">
           <img src={Phone} alt="Phone Logo" />
         </Link>
       </div>

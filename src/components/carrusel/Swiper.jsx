@@ -1,18 +1,16 @@
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { EffectFade, EffectCards } from "swiper";
+import { EffectFade } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import RightArrow from "../../assets/arrows/right.svg";
-import LeftArrow from "../../assets/arrows/left.svg";
 import Arrow from "./Arrow";
 
 export default function Swipper({ elements }) {
   return (
     <div className="carrousel_wrapper">
-     <Arrow />
+      <Arrow />
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
         effect="card"
@@ -36,7 +34,7 @@ export default function Swipper({ elements }) {
                   <h2>Delicias Destacadas</h2>
                   <h4>Recién Salido Del Mar</h4>
                   <p>
-                    En Bucanero´s pensamos en los gustos y necesidades de todos.
+                    En Bambinos pensamos en los gustos y necesidades de todos.
                     Para los más pequeños, contamos con un cofre del pirata
                     cuyos tesoros los deleitarán por horas. Los jueves los
                     dedicamos al jazz, apoyando a artistas nacionales como
@@ -48,7 +46,6 @@ export default function Swipper({ elements }) {
                   </p>
                 </div>
               </div>
-              {/* <img src={el} alt="slide image" /> */}
             </SwiperSlide>
           );
         })}
